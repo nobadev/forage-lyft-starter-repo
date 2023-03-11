@@ -10,7 +10,7 @@ class NubbinBattery(Battery):
     self.current_date = current_date
 
   def needs_service(self):
-    service_threshold_date = self.last_service_date.replace(year = self.last_service_date.year + self.yearThreshold)
+    service_threshold_date = self.last_service_date.replace(year = self.last_service_date.year + self.year_threshold)
     if service_threshold_date <= self.current_date:
       return True
     else:
