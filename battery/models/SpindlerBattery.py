@@ -3,7 +3,7 @@ from datetime import datetime
 
 class SpindlerBattery(Battery):
 
-  year_threshold = 2
+  year_threshold = 3
 
   def __init__(self, last_service_date, current_date):
     self.last_service_date = last_service_date

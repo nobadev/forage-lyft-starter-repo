@@ -7,7 +7,7 @@ from battery.models.NubbinBattery import NubbinBattery
 class TestSpindlerBattery(unittest.TestCase):
     def test_needs_service(self):
         current_date = datetime.today().date()
-        last_service_date = current_date.replace(year = current_date.year - 3)
+        last_service_date = current_date.replace(year = current_date.year - 4)
 
         battery = SpindlerBattery(last_service_date, current_date)
         self.assertTrue(battery.needs_service())
